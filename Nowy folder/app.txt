@@ -1,0 +1,31 @@
+var menuDiv = document.getElementById("menu");
+var logbookDiv = document.getElementById("logbook");
+var summaryDiv = document.getElementById("summary");
+
+
+var menuBtn = document.getElementById("menu_Btn");
+var logbookBtn = document.getElementById("logbook_Btn");
+var summaryBtn = document.getElementById("summary_Btn");
+
+
+menuBtn.onclick = function () {
+  menuDiv.classList.remove("hidden");
+  logbookDiv.classList.add("hidden");
+  summaryDiv.classList.add("hidden");
+ 
+};
+logbookBtn.onclick = function () {
+  menuDiv.classList.add("hidden");
+  logbookDiv.classList.remove("hidden");
+  summaryDiv.classList.add("hidden");
+
+};
+summaryBtn.onclick = function () {
+  menuDiv.classList.add("hidden");
+  logbookDiv.classList.add("hidden");
+  summaryDiv.classList.remove("hidden");
+};
+
+
+
+

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <h1>Dziennik praktyki zawodowej</h1>
+      <label for="links">
+        <nav>
+          <ul>
+            <li><button type="button" id="menu_Btn">Home</button></li>
+            <li>
+              <button type="button" id="logbook_Btn">Dziennik zajęć</button>
+            </li>
+            <li>
+              <button type="button" id="summary_Btn">Podsumowanie</button>
+            </li>
+          </ul>
+        </nav>
+      </label>
+      <div id="menu">
+        <label for="name">
+          Imię:
+          <input type="text" name="name" id="name" />
+        </label>
+        <label for="surname">
+          Nazwisko:
+          <input type="text" name="surname" id="surname" />
+        </label>
+        <label for="class">
+          Klasa:
+          <input type="text" name="class" id="class" />
+        </label>
+        <label for="date">
+          Rok szkolny:
+          <input type="text" name="date" id="date" />
+        </label>
+        <label for="when">
+          Odbytej w:
+          <input type="text" name="when" id="when" />
+        </label>
+        <fieldset>
+          <legend>Czas trwania praktyk</legend>
+          <label for="dateStart">
+            Data rozpoczęcia:
+            <input type="date" id="dateStart" />
+          </label>
+          <label for="dateEnd">
+            Data zakończenia:
+            <input type="date" id="dateEnd" />
+          </label>
+        </fieldset>
+        <button type="button">zatwierdź</button>
+      </div>
+      <div class="hidden" id="metryka">
+        <h2>metryka</h2>
+        <button type="button" id="metricbtn">edit</button>
+      </div>
+      <div class="hidden" id="logbook">
+        <h2>Realizacja materiału</h2>
+        <fieldset>
+          <legend>Informacja o zajęciach</legend>
+          <label for="date">
+            Wybierz date zajęć
+            <input type="date" />
+          </label>
+          <label for="dial">
+            Wybierz dział i temat
+            <select id="dzial">
+              </select>
+            </label>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Opiekun</legend>
+          <input type="radio" name="supervisor" />Jerzy Kot
+          <input type="radio" name="supervisor" />Maria Nowak
+          <input type="radio" name="supervisor" />Konstanty Kowal
+        </fieldset>
+        
+        <fieldset>
+          <legend>Realizacja materiału</legend>
+          
+          <label for="">Sprawozdanie:
+          <textarea name="text" id="textBox" cols="30" rows="10"></textarea></label>
+          <label for="">Ile godzin:
+           <input type="number" min="1" max="10" /> </label>
+         <label for=""> Stopień
+          opanowania materiału 1 <input type="range" min="1" max="6" /> 6</label>
+        </fieldset>
+        <button type="button" id="dodaj">dodaj</button>
+        <button type="button">wyczyść</button>
+      </div>
+
+      <div class="hidden" id="summary">
+        <div class="note">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
+          deserunt. Laudantium eum fuga libero id similique esse, autem cumque
+          repellendus quasi error eveniet! Iusto, ratione commodi non ipsam,
+          architecto culpa aliquid veniam voluptas totam magni aliquam,
+          aspernatur excepturi? Libero exercitationem placeat aspernatur
+          corrupti quibusdam soluta possimus, inventore reiciendis, illum in
+          quasi commodi dolorem odio facilis adipisci enim deserunt labore
+          eveniet modi doloremque quisquam molestias tempore iure accusamus.
+          Animi assumenda impedit ipsam expedita necessitatibus quod cum dolores
+          ducimus aspernatur esse minus velit eos, sit earum placeat ab illo
+          consequuntur nemo consequatur explicabo, deleniti culpa. Ad sunt eaque
+          earum quisquam? Corporis, recusandae.
+        </div>
+        <div class="note">
+          <ol>
+            <li>Systemy operacyjne, zrealizowano<b> / 20h</b></li>
+            <li>Naprawa sprzętu komputerowego, zrealizowano<b> / 20h</b></li>
+            <li>Sieci komputerowe, zrealizowano<b> / 20h</b></li>
+            <li>
+              Projektowanie stron internetowych, zrealizowano<b> / 20h</b>
+            </li>
+            <li>
+              Programowanie aplikacji internetowych, zrealizowano<b> / 20h</b>
+            </li>
+          </ol>
+        </div>
+        <div class="grade">ocena końcowa, <b>bdb</b></div>
+      </div>
+
+      <footer>&copy Rymsza</footer>
+    </form>
+  </body>
+  <script src="app.js"></script>
+ 
+</html>

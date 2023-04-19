@@ -1,0 +1,138 @@
+body {
+  font-family: sans-serif;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+form {
+  width: 80%;
+  padding: 1rem;
+  margin: 1rem auto;
+  box-shadow: 0 0 1px 1px lightgray;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+}
+
+form > div {
+  box-shadow: 0 0 1px 1px lightgray;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  justify-content: space-evenly;
+  margin-bottom: 4rem;
+}
+
+label {
+  min-width: 40%;
+  padding: 0.4rem;
+  margin: 0.5rem;
+}
+legend {
+  text-align: left;
+  margin-bottom: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 95%;
+  text-align: left;
+  padding: 1rem;
+  margin: 1rem;
+}
+fieldset > label {
+  margin-top: 1rem;
+}
+input {
+  max-width: 70%;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+ul > li {
+  margin: 1rem;
+  min-width: 9.5rem;
+}
+
+ol {
+  text-align: left;
+  margin: 0;
+}
+
+button {
+  display: block;
+  padding: 1rem;
+  background-color: #ccc;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  border-radius: 1rem;
+}
+
+button:hover {
+  color: red;
+  background-color: aliceblue;
+}
+
+footer {
+  border-top: 1px solid lightgray;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: flex;
+}
+
+.note {
+  width: 95%;
+  box-shadow: none;
+  text-align: left;
+  padding: 1rem;
+  margin: 0;
+}
+
+.grade {
+  text-align: right;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.summary {
+  box-shadow: none;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  justify-content: space-evenly;
+  margin-bottom: 4rem;
+}
+
+.textBox {
+  height: 200px;
+  font-size: medium;
+}
