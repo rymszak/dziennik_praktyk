@@ -98,10 +98,10 @@ footer {
   text-align: center;
   padding-top: 1rem;
 }
-
 .hidden {
   display: none;
 }
+
 
 .visible {
   display: flex;
@@ -135,4 +135,18 @@ footer {
 .textBox {
   height: 200px;
   font-size: medium;
+}
+
+#exit {
+width: 4rem;
+}
+#metr{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+fieldset#supervisor {
+  justify-content: space-evenly;
+  display: block;
+  flex-wrap: nowrap;
 }

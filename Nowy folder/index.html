@@ -33,17 +33,17 @@
           Nazwisko:
           <input type="text" name="surname" id="surname" />
         </label>
-        <label for="class">
+        <label for="klasa">
           Klasa:
-          <input type="text" name="class" id="class" />
+          <input type="text" name="klasa" id="klasa" />
         </label>
         <label for="date">
           Rok szkolny:
           <input type="text" name="date" id="date" />
         </label>
-        <label for="when">
+        <label for="where">
           Odbytej w:
-          <input type="text" name="when" id="when" />
+          <input type="text" name="where" id="where" />
         </label>
         <fieldset>
           <legend>Czas trwania praktyk</legend>
@@ -56,41 +56,78 @@
             <input type="date" id="dateEnd" />
           </label>
         </fieldset>
-        <button type="button">zatwierdź</button>
+        <button type="button" id="metryka">zatwierdź</button>
       </div>
-      <div class="hidden" id="metryka">
-        <h2>metryka</h2>
-        <button type="button" id="metricbtn">edit</button>
+    
+      <div  class="hidden" id="metryczka2"> 
+        <section id="metr">
+        <label id="imie_nazwisko"></label>
+          <label id="klasa_rokszkolny"></label>
+          <label id="odbyta"></label>
+          <label id="when"></label>
+          <button type="button" id="exit">edit</button>
       </div>
+      </section>
+   
       <div class="hidden" id="logbook">
-        <h2>Realizacja materiału</h2>
+        <h2>Wprowaź nowe zajęcia</h2>
         <fieldset>
           <legend>Informacja o zajęciach</legend>
           <label for="date">
             Wybierz date zajęć
             <input type="date" />
           </label>
-          <label for="dial">
-            Wybierz dział i temat
+          <label for="dzial">
+            Wybierz dział
             <select id="dzial">
-              </select>
-            </label>
+              <!-- <option value="">Wybierz dzial</option>
+              <option value="">Moduł wstępny</option>
+              <option value="">Montaż, naprawa, konserwacja i obsługa</option>
+              <option value="">Systemy informatyczne</option> -->
+            </select>
+          </label>
+          <label for="topic">
+            Tematy
+            <select id="topic">
+              <!-- <option value="">Wybierz temat</option>
+              <optgroup label="Moduł wstępny">
+                <option value="">Czynności wstępne i szkolenia</option>
+                <option value="">
+                  Struktura organizacyjna przedsiębiorstwa
+                </option>
+                <option value="">Konfiguracja sprzętu komputerowego</option>
+              </optgroup>
+              <optgroup label="Montaż, naprawa, konserwacja i obsługa">
+                <option value="">Montaż sprzętu komputerowego</option>
+                <option value="">Naprawa sprzętu komputerowego</option>
+                <option value="">
+                  Konserwacja i obsługa sprzętu komputerowego
+                </option>
+              </optgroup>
+              <optgroup label="Systemy informatyczne">
+                <option value="">Zasady administrowanai sys. info.</option>
+                <option value="">Dokumentacja technologiczna</option>
+                <option value="">
+                  Biblioteki oprogramowania i zbiorów danych
+                </option>
+              </optgroup> -->
+            </select>
           </label>
         </fieldset>
-        <fieldset>
+        <fieldset id="sypervisor">
           <legend>Opiekun</legend>
-          <input type="radio" name="supervisor" />Jerzy Kot
-          <input type="radio" name="supervisor" />Maria Nowak
-          <input type="radio" name="supervisor" />Konstanty Kowal
+          <label><input type="radio" name="supervisor" />Jerzy Kot</label>
+          <label><input type="radio" name="supervisor" />Maria Nowak</label>
+          <label><input type="radio" name="supervisor" />Konstanty Kowal</label>
         </fieldset>
-        
         <fieldset>
           <legend>Realizacja materiału</legend>
-          
+         
           <label for="">Sprawozdanie:
           <textarea name="text" id="textBox" cols="30" rows="10"></textarea></label>
           <label for="">Ile godzin:
            <input type="number" min="1" max="10" /> </label>
+         Zrealizowano:<input type="checkbox" /> 
          <label for=""> Stopień
           opanowania materiału 1 <input type="range" min="1" max="6" /> 6</label>
         </fieldset>
@@ -133,5 +170,5 @@
     </form>
   </body>
   <script src="app.js"></script>
- 
+  <script src="teachingProgram.js"></script>
 </html>
